@@ -1,0 +1,126 @@
+
+// Css simple reset
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+}
+p {
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+body{
+  background-color: $backgroundColor;
+  font-family: $baseFont;
+  color: $baseColor;
+  font-size: $baseText;
+  overflow-x: hidden;
+}
+button {
+  cursor: pointer;
+}
+button:focus {
+  outline:none;
+}
+
+.section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width:100%;
+  overflow-x: hidden;
+
+  &__content {
+    padding:1rem;
+  }
+
+  &__title {
+    font-family: $mainFont;
+    font-size: $h2;
+    color: $mainColor;
+    font-weight: $bold;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+ 
+}
+// set content when modal welcome is active
+.animate {
+  // transform: translateY(100px);
+  opacity: 0;
+}
+.is__modal {
+  overflow: hidden;
+
+  #content,
+  #main {
+    overflow:hidden;
+  }
+  .panel {
+    &__first {
+      position:relative;
+      width:100%;
+    }
+    &__second {
+      width:0;
+      display:none;
+    }
+  }
+  .hero__content {
+    transform: translate(190px, 50px);
+    opacity: .4;
+  }
+}
+
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.panel {
+  &__first {
+    position:relative;
+    width:100%;
+  }
+  &__second {
+    position: relative;
+    width:100%;
+    text-align: center;
+  }
+}
+
+// Responsive
+
+@media only screen and (min-width: 992px){
+  .flex {
+    flex-direction: row;
+  }
+  .panel {
+
+    &__first {
+      overflow: hidden;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      position: fixed;
+      padding: 0;
+      width: $leftPanel;
+      height: 100%;
+    }
+
+    &__second {
+      width: $rightPanel;
+      margin-left: auto;
+      text-align: center;
+    }
+  }
+}
+
+// @media only screen and (max-width: 991px){
+//   .flex {
+//     flex-direction: column;
+//   }
+// }

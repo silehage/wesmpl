@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Great+Vibes&display=swap');
+
+// Base
+$backgroundColor: rgb(253, 245, 223); // Background color
+
+$baseColor: rgb(63, 59, 42); // Base Color for body
+$baseFont:  'Montserrat', sans-serif; // Base font family
+$baseText: 16px; // Base text size
+
+// Main Font Family
+$mainFont: 'Great Vibes', cursive;
+
+// Color 
+$mainColor: rgb(202, 17, 125); // Main title color
+$secondaryColor: rgb(17, 128, 202);
+$tertiaryColor: rgb(3, 165, 111);
+
+$dark: #333;
+$light: rgb(224, 224, 224);
+$grey: rgb(141, 141, 141);
+
+
+// Font Size
+$hero: 5rem;
+$h1: 3.5rem;
+$h2: 2.7rem;
+$h3: 2.1rem;
+$h4: 1.7rem;
+$h5: 1.3rem;
+$h6: 1.1rem;
+$p: 1rem;
+$p1: .95rem;
+$p2: .87rem;
+$p3: .83rem;
+
+// Font Weight
+$boldest: 900;
+$bolder: 800;
+$bold: 600;
+$semibold: 400;
+
+// Panel width max width 100%;
+$leftPanel: 63%;
+$rightPanel: 37%;

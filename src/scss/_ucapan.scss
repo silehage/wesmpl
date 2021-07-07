@@ -1,0 +1,55 @@
+section#ucapan {
+  .section {
+    &__title {
+      font-size: $h2;
+    }
+    &__subtitle {
+      font-size: $p3;
+      text-align: center;
+      padding: 5px 12px;
+    }
+    &__content {
+      padding: 2rem;
+
+      &__form {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding:2rem;
+        background-color: darken($backgroundColor, 5);
+        border-radius: 8px;
+
+        label {
+          display:block;
+          margin-bottom: 1rem;;
+          span {
+            display: block;
+            margin-bottom:.3rem;
+            font-size: $p3;
+          }
+        }
+  
+        .input {
+          width: 100%;
+          padding: 8px;
+          outline: none;
+          border: 1px solid darken($backgroundColor, 10);
+          border-radius: 6px;
+        }
+        button {
+          align-self: flex-end;
+          padding: 8px 16px;
+          background-color: darken($backgroundColor, 30);
+          border-radius: 5px;
+          font-size: $p2;
+          color: white;
+          &:hover,
+          &:focus {
+             background-color: darken($backgroundColor, 35);
+             color: darken(white, 5);
+          }
+        }
+      }
+    }
+  }
+}
