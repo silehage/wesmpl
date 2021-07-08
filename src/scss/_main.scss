@@ -25,7 +25,9 @@ button {
 button:focus {
   outline:none;
 }
-
+main {
+  background-color: $backgroundColor;
+}
 .section {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -91,6 +93,7 @@ button:focus {
     position: relative;
     width:100%;
     text-align: center;
+    background-color: $backgroundColor;
   }
 }
 
