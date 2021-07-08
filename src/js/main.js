@@ -57,9 +57,7 @@ class Animate {
     this.out(el, animation)
   }
   setIn(node, animation){
-    console.log(node, animation);
     const el = document.querySelector(node)
-    console.log(el);
     if(!el) return
     this.in(el, animation)
   }

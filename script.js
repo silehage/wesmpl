@@ -26,6 +26,7 @@ const welcomeAnim = () => {
     document.body.classList.remove('is__modal')
     animate.setOut('.welcome', 'fadeOut')
     animate.setIn('#content', 'fadeIn')
+    playMusic()
     
   },300)
 }
@@ -106,11 +107,11 @@ function playMusic() {
   if(isPlaying()) {
     audioSrc.pause()
     playBtn.innerHTML = iconPlay
-    // playBtn.classList.remove("rotating-border", "rotating-border--black-yellow")
+    playBtn.classList.remove("rotating-border", "rotating-border--black-yellow")
   } else {
     audioSrc.play()
     playBtn.innerHTML = iconPause
-    // playBtn.classList.add("rotating-border", "rotating-border--black-yellow")
+    playBtn.classList.add("rotating-border", "rotating-border--black-yellow")
   }
 }
 function isPlaying() {

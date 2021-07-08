@@ -1054,11 +1054,11 @@ section#ucapan .section__content__form button:hover, section#ucapan .section__co
   --border-radius: 100%;
   --border-bg: conic-gradient(
     #F0C400 0.1666turn, 
-    #444 0.1666turn 0.3333turn, 
+    #967a00 0.1666turn 0.3333turn, 
     #F0C400 0.3333turn 0.5turn, 
-    #444 0.5turn 0.6666turn, 
+    #967a00 0.5turn 0.6666turn, 
     #F0C400 0.6666turn 0.8333turn, 
-    #444 0.8333turn
+    #967a00 0.8333turn
   );
   text-align: center;
 }
