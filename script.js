@@ -27,12 +27,22 @@ const welcomeAnim = () => {
     animate.setOut('.welcome', 'fadeOut')
     animate.setIn('#content', 'fadeIn')
     playMusic()
+    openFullscreen()
     
   },300)
 }
 welcomeBtn.addEventListener('click', welcomeAnim)
 
-
+function openFullscreen() {
+  console.log('request');
+  if (document.body.requestFullscreen) {
+    document.body.requestFullscreen();
+  } else if (document.body.webkitRequestFullscreen) { /* Safari */
+    document.body.webkitRequestFullscreen();
+  } else if (document.body.msRequestFullscreen) { /* IE11 */
+    document.body.msRequestFullscreen();
+  }
+}
 // Animation
 
 /*** animasi ='zoomIn', 'zoomInDown', 'zoomInLeft', 'zoomInRight', 'zoomInUp', 'jackInTheBox', 
