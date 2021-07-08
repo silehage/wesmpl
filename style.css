@@ -246,6 +246,14 @@ main {
   background-color: #fdf5df;
 }
 
+strong {
+  font-weight: 600;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
 .section {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -1115,5 +1123,88 @@ div#tab__menu .tab:hover, div#tab__menu .tab:focus, div#tab__menu .tab:active {
   div#tab__menu {
     display: none;
   }
+}
+
+/* Variables */
+section#kisah {
+  padding: 5px;
+}
+
+section#kisah .section {
+  /* Timeline */
+}
+
+section#kisah .section__content__timeline {
+  border-left: 4px solid #e8ad15;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  color: #b98a11;
+  margin: 0 auto;
+  letter-spacing: 0.5px;
+  position: relative;
+  line-height: 1.4em;
+  font-size: 1.03em;
+  padding: 1rem 1rem 1rem 3rem;
+  list-style: none;
+  text-align: left;
+  font-weight: 100;
+  margin-left: 6rem;
+}
+
+section#kisah .section__content__timeline h2 {
+  font-family: "Great Vibes", cursive;
+  font-weight: 100;
+  font-size: 1.4em;
+  margin-bottom: 1rem;
+}
+
+section#kisah .section__content__timeline h3, section#kisah .section__content__timeline h4 {
+  font-weight: 400;
+  margin-bottom: .7rem;
+}
+
+section#kisah .section__content__timeline .event {
+  border-bottom: 1px dashed #e8ad15;
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+section#kisah .section__content__timeline .event p {
+  font-size: 0.83rem;
+}
+
+section#kisah .section__content__timeline .event:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+
+section#kisah .section__content__timeline .event:before, section#kisah .section__content__timeline .event:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+section#kisah .section__content__timeline .event:before {
+  left: -217.5px;
+  color: #b98a11;
+  content: attr(data-date);
+  text-align: right;
+  font-weight: 100;
+  font-size: 0.9em;
+  min-width: 120px;
+}
+
+section#kisah .section__content__timeline .event:after {
+  -webkit-box-shadow: 0 0 0 4px #b98a11;
+          box-shadow: 0 0 0 4px #b98a11;
+  left: -55px;
+  background: #fdf5df;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+  top: 5px;
 }
 /*# sourceMappingURL=style.css.map */

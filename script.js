@@ -1,6 +1,6 @@
 
 // true or false
-const dev = false
+const dev = true
 
 // Animate with animate.css
 // Initialization class

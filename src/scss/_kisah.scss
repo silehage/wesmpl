@@ -1,0 +1,100 @@
+
+/* Variables */
+
+$background: #252827;
+
+$color-primary: #004ffc;
+$color-light: white;
+$color-dim: #6c6d6d;
+$spacing: 50px;
+$radius: 4px;
+
+$date: 120px;
+$dotborder: 4px;
+$dot: 11px;
+$line: 4px;
+
+
+section#kisah {
+  padding:5px;
+  .section {
+
+    /* Timeline */
+    &__content {
+
+      &__timeline {
+        border-left: $line solid lighten($menuColor, 10);
+        border-bottom-right-radius: $radius;
+        border-top-right-radius: $radius;    
+        color: $menuColor;
+        margin: 0 auto;
+        letter-spacing: 0.5px;   
+        position: relative;
+        line-height: 1.4em;
+        font-size: 1.03em;   
+        padding: 1rem 1rem 1rem 3rem;
+        list-style: none;
+        text-align: left;
+        font-weight: 100;
+        margin-left: 6rem;
+        
+        h2 {
+         font-family: $mainFont;
+         font-weight: 100;
+         font-size: 1.4em;   
+         margin-bottom: 1rem; 
+        }
+        
+        h3, h4 {
+         font-weight: $semibold;
+         margin-bottom: .7rem;
+        }
+        
+        .event {
+          border-bottom: 1px dashed lighten($menuColor, 10);
+          padding-bottom: ($spacing * 0.5);
+          margin-bottom: $spacing;  
+          position: relative;
+
+          p {
+            font-size: $p3;
+          }
+      
+          &:last-of-type { 
+            padding-bottom: 0;
+            margin-bottom: 0; 
+            border: none;      
+          }
+      
+          &:before, &:after {
+            position: absolute;
+            display: block;
+            top: 0;
+          }
+      
+          &:before {
+            left: ((($date * 0.6) + $spacing + $line + $dot + ($dotborder * 2)) * 1.5) * -1;    
+            color: $menuColor;    
+            content: attr(data-date);
+            text-align: right;
+            font-weight: 100;    
+            font-size: 0.9em;
+            min-width: $date;
+          }
+      
+          &:after {
+            box-shadow: 0 0 0 $dotborder $menuColor;;    
+            left: -55px;        
+            background: $backgroundColor;    
+            border-radius: 50%;  
+            height: $dot;
+            width: $dot;
+            content: "";
+            top: 5px;
+          }
+        }
+      }
+    }
+  }
+  
+}
