@@ -10,8 +10,11 @@
   display: block;
   opacity: 1;
 
-  &.done {
-    opacity: 0;
+  &.is__dev {
+    position:relative;
+    & > * {
+      position:relative;
+    }
   }
   
   &__overlay {

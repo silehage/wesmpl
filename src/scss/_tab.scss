@@ -1,0 +1,38 @@
+div#tab__menu {
+  display: flex;
+  justify-content: space-around;
+  padding: .8rem;
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  background-color: rgb(255, 255, 255);
+  z-index:100;
+  box-shadow: 0px -1px 12px -8px #7b7b7b;
+  font-size: 12px;
+
+
+  .tab {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:$menuColor;
+    text-decoration: none;
+    &__icon {
+      width:20px;
+      height:20px;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      color: darken($menuColor, 10)
+    }
+  }
+}
+
+@media only screen and (min-width: 992px){
+  div#tab__menu {
+    display: none;
+  }
+}

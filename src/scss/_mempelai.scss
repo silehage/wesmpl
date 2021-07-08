@@ -3,14 +3,6 @@
 **/
 section#mempelai {
   .section {
-    position: relative;
-    min-height: 100vh;
-    padding: 3rem 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
     &__title {
       font-size: $h2;
     }

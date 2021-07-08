@@ -1,6 +1,8 @@
 
 // Css simple reset
-
+// html {
+//   scroll-behavior: smooth;
+// }
 *, ::before, ::after {
   box-sizing: border-box;
   border-width: 0;
@@ -118,9 +120,3 @@ button:focus {
     }
   }
 }
-
-// @media only screen and (max-width: 991px){
-//   .flex {
-//     flex-direction: column;
-//   }
-// }

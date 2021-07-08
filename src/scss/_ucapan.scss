@@ -1,4 +1,7 @@
 section#ucapan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .section {
     &__title {
       font-size: $h2;
@@ -9,7 +12,8 @@ section#ucapan {
       padding: 5px 12px;
     }
     &__content {
-      padding: 2rem;
+      max-width:600px;
+      width: 100%;
 
       &__form {
         display: flex;
@@ -18,6 +22,7 @@ section#ucapan {
         padding:2rem;
         background-color: darken($backgroundColor, 5);
         border-radius: 8px;
+        font-size: $p3;
 
         label {
           display:block;
@@ -35,6 +40,8 @@ section#ucapan {
           outline: none;
           border: 1px solid darken($backgroundColor, 10);
           border-radius: 6px;
+          background-color: #fffbfb;
+          color: #3b3522;
         }
         button {
           align-self: flex-end;

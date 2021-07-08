@@ -1,15 +1,13 @@
+// Sample Main Js
+
 Array.prototype.random = function () {
   return this[Math.floor((Math.random()*this.length))];
 }
 class Undangan {
-
-  saveUcapan(data) {
+  saveUcapan() {
     // save data to server
-    console.log(data);
+   alert('Sample save data. note ini hanya sample js.')
   }
-  // isValid() {
-  //   return this.title != undefined && this.value != undefined && this.avatar != undefined
-  // }
 }
 
 class Animate {
@@ -59,7 +57,9 @@ class Animate {
     this.out(el, animation)
   }
   setIn(node, animation){
+    console.log(node, animation);
     const el = document.querySelector(node)
+    console.log(el);
     if(!el) return
     this.in(el, animation)
   }
@@ -67,7 +67,7 @@ class Animate {
   getRandomAnimation() {
     return this.animationIn[Math.floor((Math.random()*this.animationIn.length))];
   }
-  lazy(el, options) {
+  lazyContent(el, options) {
 
     let { rootMargin, threshold, animation, className } = options
     let opts = {
