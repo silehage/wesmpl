@@ -1,0 +1,40 @@
+section#savedate {
+  .card {
+    .countdown {
+      color:lighten($baseColor, 30);
+      &__container {
+        padding:1rem;
+        text-align: center;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      &__block {
+        display: flex;
+        margin:8px;
+        font-size: $h5;
+        font-weight: $bold;
+
+        .day{
+          font-size: $h1;
+          font-weight: $bold;
+          display: flex;
+          width: 100%;
+        }
+      }
+      &--digit {
+      }
+      &--label {
+        margin-left:5px;
+      }
+
+      &--item {
+        padding: 3px 8px;
+      }
+      &--endtext {
+        font-size: $p;
+      }
+    }
+  }
+}

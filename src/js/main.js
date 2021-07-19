@@ -1,8 +1,7 @@
-// Sample Main Js
-
 Array.prototype.random = function () {
-  return this[Math.floor((Math.random()*this.length))];
+  return this[Math.floor((Math.random() * this.length))];
 }
+
 class Undangan {
   saveUcapan() {
     // save data to server
@@ -13,12 +12,32 @@ class Undangan {
 class Animate {
 
   constructor() {
-    this.animationIn = [ 'zoomIn', 'zoomInDown', 'zoomInLeft', 'zoomInRight', 'zoomInUp', 'jackInTheBox', 'lightSpeedInRight', 'rotateInDownRight', 'slideInRight', 'slideInUp', 'fadeInUp', 'bounceInUp', 'rubberBand', 'fadeIn' ]
+    this.animationIn = [ 'backInLeft', 'backInRight', 'backInUp','zoomIn', 'zoomInDown', 'zoomInLeft', 'zoomInRight', 'zoomInUp', 'slideInRight', 'slideInUp', 'fadeInUp', 'fadeInBottomLeft', 'fadeInBottomright','fadeIn', 'fadeInUp', 'fadeInLeft', 'fadeInRIght']
+    this.animationOut = ['zoomOut', 'zoomOutDown', 'zoomOutDown', 'zoomOutDown', 'zoomOutUp', 'backOutDown', 'backOutLeft', 'backOutRight', 'backOutUp', 'bounceOutLeft', 'bounceOutUp', 'fadeOutLeft', 'fadeOutRight', 'fadeOutTopLeft', 'fadeOutTopRight', 'fadeOutBottomRight', 'fadeOutBottomLeft'];
+
   }
 
-  in(node, animation, prefix = 'animate__',){
+  in(node, animation = 'fadeInUp', prefix = 'animate__',){
 
     new Promise((resolve, reject) => {
+      node.style.opacity = 1
+      const animationName = `${prefix}${animation}`;
+      node.classList.add(`${prefix}animated`, animationName);
+
+      function hadleAnimatedInEnd(event) {
+        event.stopPropagation();
+        node.classList.remove(`${prefix}animated`, animationName);
+        resolve('Animation In ended');
+      }
+
+      node.addEventListener('animationend', hadleAnimatedInEnd, {once: true});
+    
+    });
+  }
+  modal(node, animation = 'zoomInDown', prefix = 'animate__',){
+
+    new Promise((resolve, reject) => {
+      node.style.opacity = 1
       const animationName = `${prefix}${animation}`;
       node.classList.add(`${prefix}animated`, animationName);
 
@@ -33,7 +52,7 @@ class Animate {
     });
   }
 
-  out(node, animation, prefix = 'animate__',){
+  out(node, animation = 'zoomOutDown', prefix = 'animate__',){
 
     new Promise((resolve, reject) => {
       const animationName = `${prefix}${animation}`;
@@ -62,7 +81,10 @@ class Animate {
     this.in(el, animation)
   }
 
-  getRandomAnimation() {
+  getRandomOut() {
+    return this.animationOut[Math.floor((Math.random()*this.animationOut.length))];
+  }
+  getRandomIn() {
     return this.animationIn[Math.floor((Math.random()*this.animationIn.length))];
   }
   lazyContent(el, options) {
@@ -76,7 +98,7 @@ class Animate {
     
     let anim;
     if(!animation || animation == 'random' || animation == undefined) {
-      anim = this.getRandomAnimation()
+      anim = this.getRandomIn()
     } else {
       anim = animation
     }

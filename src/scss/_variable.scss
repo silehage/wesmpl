@@ -1,9 +1,10 @@
+/* import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Great+Vibes&display=swap');
 
 // Base
 $backgroundColor: rgb(253, 245, 223); // Background color
 
-$baseColor: rgb(63, 59, 42); // Base Color for body
+$baseColor: rgb(71, 55, 21); // Base Color for body
 $baseFont:  'Montserrat', sans-serif; // Base font family
 $baseText: 16px; // Base text size
 
@@ -16,6 +17,11 @@ $menuColor: rgb(185, 138, 17);
 $mainColor: rgb(202, 17, 125); // Main title color
 $secondaryColor: rgb(17, 128, 202);
 $tertiaryColor: rgb(3, 165, 111);
+$disabled: rgb(128, 128, 128);
+
+$success: rgb(3, 167, 11);
+$info: rgb(3, 128, 167);
+$error: rgb(190, 25, 3);
 
 $dark: #333;
 $light: rgb(224, 224, 224);
@@ -34,13 +40,16 @@ $p: 1rem;
 $p1: .95rem;
 $p2: .87rem;
 $p3: .83rem;
+$p4: .78rem;
 
 // Font Weight
 $boldest: 900;
 $bolder: 800;
 $bold: 600;
 $semibold: 400;
+$normal: 300;
 
 // Panel width max width 100%;
-$leftPanel: 63%;
-$rightPanel: 37%;
+$fisrtPanel: 63%;
+$secondPanel: 37%;
+

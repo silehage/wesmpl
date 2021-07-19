@@ -1,0 +1,37 @@
+#credit {
+  background-color: wheat;
+  .footer {
+    padding:1.6rem;
+    &__title {
+      font-size: 2.7rem;
+      font-family: $mainFont;
+      color: $mainColor;
+    }
+    &__content {
+      font-size: $p4;
+      padding: 1rem;
+      color: lighten($baseColor, 15);
+      .heading {
+        font-size: $p;
+
+        a {
+          color: $mainColor;
+          &:hover {
+            color:lighten($mainColor, 10)
+          }
+        }
+      }
+      .subheading {
+        font-size: $p2;
+      }
+
+      a {
+        color: lighten($baseColor, 15);
+        &:hover {
+          color:darken($baseColor, 10)
+        }
+      }
+    }
+
+  }
+}

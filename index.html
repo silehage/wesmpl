@@ -6,30 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resepsi Pernikahan</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./src/dev/dev.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body class="">
   
   <!-- Main Content -->
   <main id="main">
-    <div id="content" class="flex">
+    <div id="content" class="flex panel">
       <!-- Panel First Start -->
       <div class="panel__first">
   
         <!-- Section Hero Start -->
         <section class="hero">
-          <div class="hero__ornament">
-            <span class="hero__ornament--item left-top"></span>
-            <span class="hero__ornament--item right-top"></span>
-            <span class="hero__ornament--item left-bottom"></span>
-            <span class="hero__ornament--item right-bottom"></span>
+          <div class="ornament">
+            <span class="ornament--item left-top"></span>
+            <span class="ornament--item right-top"></span>
+            <span class="ornament--item left-bottom"></span>
+            <span class="ornament--item right-bottom"></span>
           </div>
-          <div class="hero__content">
-            <div class="hero__content--text">The Wedding of</div>
-            <div class="hero__content--heading">Fatimah</div>
-            <div class="hero__content--heading">&</div>
-            <div class="hero__content--heading">Tony</div>
-            <div class="hero__content--text">11 Februari 2021</div>
+          <div class="content">
+            <div class="content--text">The Wedding of</div>
+            <div class="content--heading">Fatimah</div>
+            <div class="content--heading">&</div>
+            <div class="content--heading">Tony</div>
+            <div class="content--text">11 Februari 2021</div>
           </h2>
           </div>
         </section>
@@ -41,38 +42,67 @@
       <!-- Panel Second Start-->
   
       <div class="panel__second">
+
+          <!-- Welcome Modal Start-->
+          <div id="welcome" class="modal">
+            <div class="modal__content">
+              <div class="modal__item">
+                <div class="item title">
+                  Dear Bapak Adrianto
+                </div>
+                <span class="divider one"></span>
+                <img class="item image" src="./src/sample-data/img/charly-pn-k_z16ECarPQ-unsplash.jpg">
+                <div class="item text">Tanpa mengurangi rasa hormat, kami memberikan kabar bahagia ini dan
+                  memohon
+                  restu dari rekan sekalian untuk senantiasa
+                  mendoakan kelancaran acara pernikahan kami.
+                </div>
+                <button id="welcome__btn" type="button" class="btn">Buka Undangan</button>
+                <p class="bottom__text">( Mohon maaf jika ada kesalahan penulisan nama atau gelar )</p>
+              </div>
+            </div>
+          </div>
+          <!-- Welcome Modal End -->
         
         <!-- Section Intro Start -->
         <section id="intro" class="section">
-          <span class="divider one padding"></span>
-          <h2 class="section__title">Undangan</h2>
-          <div class="section__content">
-            <p class="section__content--quote-text">Dan segala sesuatu Kami ciptakan berpasang-pasangan supaya kamu mengingat kebesaran
-              Allah</p>
-            <p class="section__content--quote-footer">(QS. AZ-ZARIYAT : 49)</p>
+          <span class="divider padding"></span>
+          <div class="card">
+            <div class="card__content">
+              <h2 class="card__title">Undangan</h2>
+              <div class="card__item">
+                <p class="item">
+                  Dan segala sesuatu Kami ciptakan berpasang-pasangan supaya kamu mengingat kebesaran Allah
+                </p>
+              </div>
+            </div>
           </div>
-          <span class="divider one padding"></span>
+          <span class="divider padding"></span>
         </section>
         <!-- Section Intro End -->
   
   
         <!-- Section Mempelai Start -->
         <section id="mempelai" class="section">
-          <h2 class="section__title">Yang Berbahagia</h2>
-          <div class="section__content">
-            <div class="section__content__item">
-              <div class="section__content__item--foto">
-                <img src="https://picsum.photos/id/1005/300/300">
+          <div class="card">
+            <h2 class="card__title">Yang Berbahagia</h2>
+            <p class="card__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab distinctio necessitatibus sint
+              explicabo id soluta.</p>
+            <div class="card__content">
+              <div class="card__item">
+                <div class="item image">
+                  <img src="./src/sample-data/img/y8904Be1cxivGwoQpZr557lE4NVXd4sNvFh0LNMM.webp">
+                </div>
+                <div class="item name">Tony Hermawan</div>
+                <div class="item bio">Seorang lelaki yang selalu bekerja keras</div>
               </div>
-              <div class="section__content__item--nama-pengantin">Tony Hermawan</div>
-              <div class="section__content__item--bio">Seorang lelaki yang selalu bekerja keras</div>
-            </div>
-            <div class="section__content__item">
-              <div class="section__content__item--foto">
-                <img src="https://picsum.photos/id/1011/300/300">
+              <div class="card__item">
+                <div class="item image">
+                  <img src="./src/sample-data/img/b8Jla87rIaftd3frOSkDxX5dLG8XkrU.webp">
+                </div>
+                <div class="item name">Fatimah Az Zahra</div>
+                <div class="item bio">Wanita muslimah yang tangguh</div>
               </div>
-              <div class="section__content__item--nama-pengantin">Fatimah Az Zahra</div>
-              <div class="section__content__item--bio">Wanita muslimah yang tangguh</div>
             </div>
           </div>
         </section>
@@ -82,310 +112,418 @@
   
         <!-- Section Acara start -->
         <section id="acara" class="section">
-          <h2 class="section__title">Acara</h2>
-          <div class="section__content">
-            <div class="section__content__item">
-              <p class="section__content__item--title">Akad Nikah</p>
-              <p class="section__content__item--tanggal">12 Januari 2022</p>
-              <p class="section__content__item--jam" >Pukul 08:30 sd 10:00 WIB</p>
-              <div class="section__content__item--tempat">
-                <p>Bertempat di</p>
-                <p>Kediaman Mempelai Wanita</p>
-                <p>Jalab kebangsaan no 13</p>
-                <p>Jakarta barat</p>
+          <div class="card">
+            <h2 class="card__title">Acara</h2>
+            <p class="card__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab distinctio necessitatibus sint
+              explicabo id soluta.</p>
+            <div class="card__content">
+              <div class="card__item">
+                <p class="item title">Akad Nikah</p>
+                <p class="item tanggal">12 Januari 2022</p>
+                <p class="item jam" >Pukul 08:30 sd 10:00 WIB</p>
+                <div class="item tempat">
+                  <p>Bertempat di</p>
+                  <p>Kediaman Mempelai Wanita</p>
+                  <p>Jalab kebangsaan no 13</p>
+                  <p>Jakarta barat</p>
+                </div>
               </div>
-            </div>
-            <div class="section__content__item">
-              <p class="section__content__item--title">Resepsi Pernikahan</p>
-              <p class="section__content__item--tanggal">12 Januari 2022</p>
-              <p class="section__content__item--jam" >Pukul 08:30 sd 10:00 WIB</p>
-              <div class="section__content__item--tempat">
-                <p>Bertempat di</p>
-                <p>Kediaman Mempelai Wanita</p>
-                <p>Jalab kebangsaan no 13</p>
-                <p>Jakarta barat</p>
+              <div class="card__item">
+                <p class="item title">Resepsi Pernikahan</p>
+                <p class="item tanggal">12 Januari 2022</p>
+                <p class="item jam" >Pukul 08:30 sd 10:00 WIB</p>
+                <div class="item tempat">
+                  <p>Bertempat di</p>
+                  <p>Kediaman Mempelai Wanita</p>
+                  <p>Jalab kebangsaan no 13</p>
+                  <p>Jakarta barat</p>
+                </div>
               </div>
             </div>
           </div>
         </section>
         <!-- Section Acara End -->
-  
-        <span class="divider one"></span>
-  
+
+        <span class="divider padding"></span>
+        
         <!-- Section Gallery Start -->
         <section id="gallery" class="section">
-          <h2 class="section__title">Foto Galeri</h2>
-          <div class="section__content">
-            <div class="section__content__grid">
-              <div class="section__content__grid--item">
-                <img class="img" src="https://picsum.photos/300/200" width="300"  height="200"/>
+          <div class="card">
+            <h2 class="card__title">Foto Galeri</h2>
+            <p class="card__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab distinctio</p>
+            <div class="card__content">
+              <div class="card__item">
+                <img class="img" src="./src/sample-data/img/dakota-roos-u7ldh_tgH3s-unsplash.jpg"/>
               </div>
-              <div class="section__content__grid--item">
-                <img class="img" src="https://picsum.photos/300/150" width="300"  height="150"/>
+              <div class="card__item">
+                <img class="img" src="./src/sample-data/img/angello-pro-UljbyG2UcVI-unsplash.jpg"/>
               </div>
-              <div class="section__content__grid--item">
-                <img class="img" src="https://picsum.photos/300/400" width="300"  height="400"/>
+              <div class="card__item">
+                <img class="img" src="./src/sample-data/img/ethan-robertson-SYx3UCHZJlo-unsplash.jpg"/>
               </div>
-              <div class="section__content__grid--item">
-                <img class="img" src="https://picsum.photos/300/250" width="300"  height="250" />
+              <div class="card__item">
+                <img class="img" src="./src/sample-data/img/arty-n_GGaQHqT4Q-unsplash.jpg"/>
               </div>
-              <div class="section__content__grid--item">
-                <img class="img" src="https://picsum.photos/300/300" width="300"  height="300"/>
+              <div class="card__item">
+                <img class="img" src="./src/sample-data/img/tyler-nix-6mze64HRU2Q-unsplash.jpg"/>
               </div>
-              <div class="section__content__grid--item">
-                <img class="img" src="https://picsum.photos/300/370" width="300"  height="370"/>
+              <div class="card__item">
+                <img class="img" src="./src/sample-data/img/charly-pn-k_z16ECarPQ-unsplash.jpg"/>
               </div>
             </div>
             </div>
-        </section>
-        <!-- Section Gallery End -->
-  
-  
-        <span class="divider one padding"></span>
-  
-  
-        <!-- Angpao Start -->
-        <section id="angpao" class="section">
-          <h2 class="section__title">Kirim Hadiah</h2>
-          <div class="section__subtitle">Berikan hadiah kepada mempelai</div>
-          <div class="section__content">
-            <div class="section__content__title">Via Bank Transfer</div>
-            <div class="section__content__item">
-              <div class="section__content__item--provider">BCA</div>
-              <div class="section__content__item--value">1234-1234-1234-532</div>
-              <div class="section__content__item--cabang">BCA cabang cengkareng</div>
-              <div class="section__content__item--akun">a.n Tony Hermawan</div>
-            </div>
-            <div class="section__content__item">
-              <div class="section__content__item--provider">BRI</div>
-              <div class="section__content__item--value">1234-1234-1234-532</div>
-              <div class="section__content__item--cabang">BCA cabang cengkareng</div>
-              <div class="section__content__item--akun">a.n Fatimah Az Zahra</div>
-            </div>
-          </div>
-          <div class="section__content">
-            <div class="section__content__title">Via Dompet Digital</div>
-            <div class="section__content__item">
-              <div class="section__content__item--provider">OVO</div>
-              <img src="https://picsum.photos/300/300">
-              <div class="section__content__item--akun">a.n Tony Hermawan</div>
-            </div>
-            <div class="section__content__item">
-              <div class="section__content__item--provider">LINK AJA</div>
-              <img src="https://picsum.photos/300/300">
-              <div class="section__content__item--akun">a.n Tony Hermawan</div>
-            </div>
-          </div>
-        </section>
-        <!-- Angpao End -->
-  
-  
-        <span class="divider one padding"></span>
-  
-        <!-- maps Start -->
+          </section>
+          <!-- Section Gallery End -->
+          
+        <span class="divider one"></span>
+
+          <!-- maps Start -->
         <section id="maps" class="section">
-          <h2 class="section__title">Google Maps</h2>
-          <div class="section__content">
-            <div class="section__content__item">
-              <div class="section__content__item--maps">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6911659483294!2d106.83299401436987!3d-6.172088962201076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5cc097e35db%3A0x7302b729335a095b!2sHotel%20Borobudur%20Jakarta!5e0!3m2!1sen!2sid!4v1625652381598!5m2!1sen!2sid"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <div class="card">
+            <h2 class="card__title">Google Maps</h2>
+            <p class="card__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab distinctio necessitatibus sint explicabo id soluta.</p>
+            <div class="card__content">
+              <div class="card__item">
+                <div class="item maps">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6911659483294!2d106.83299401436987!3d-6.172088962201076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5cc097e35db%3A0x7302b729335a095b!2sHotel%20Borobudur%20Jakarta!5e0!3m2!1sen!2sid!4v1625652381598!5m2!1sen!2sid"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                  </iframe>
+                </div>
               </div>
-              <!-- <button id="map__btn" type="button" class="btn">Lihat Maps</button> -->
+              <div class="card__actions">
+                <a id="map__btn" target="_blank" href="https://maps.google.com/maps?&amp;q=Hotel+Borobudur+Jakarta&amp;z=16" class="btn">Lihat Maps</a>
+              </div>
             </div>
           </div>
         </section>
         <!-- maps End -->
+    
+        <span class="divider padding"></span>
   
-              
-        <span class="divider one padding"></span>
+  
+        <!-- Angpao Start -->
+        <section id="angpao" class="section">
+          <div class="card">
+            <h2 class="card__title">Kirim Hadiah</h2>
+            <p class="card__subtitle">Berikan hadiah kepada mempelai</p>
+            <div class="card__content">
+              <div class="card__content__title">Via Bank Transfer</div>
 
-      <!-- Ucapan Start -->
-      <section id="ucapan" class="section">
-        <h2 class="section__title">Kirim Ucapan</h2>
-        <div class="section__subtitle">Kirim ucapan dan konfirmasi kehadiran anda ke mempelai.</div>
-        <div class="section__content">
-          <div class="section__content__form">
-            <label>
-              <span class="label">Nama</span>
-              <div class="">
-                <input class="input" type="text" />
+              <div class="card__item">
+                <div class="item provider">BCA</div>
+                <div class="item value">1234-1234-1234-532</div>
+                <div class="item cabang">BCA cabang cengkareng</div>
+                <div class="item akun">a.n Tony Hermawan</div>
               </div>
-            </label>
-            <label>
-              <span class="label">Konfirmasi Kehadiran</span>
-              <div class="">
-                <select class="input">
-                  <option value="">Pilih</option>
-                  <option value="Hadir">Ya, Saya akan hadir</option>
-                  <option value="Tidak Bisa Hadir">Maaf, Saya tidak bisa hadir</option>
-                  <option value="Insha Allah Hadir">Insha Allah Saya akan hadir</option>
-                  <option value="Kemungkinan Hadir">Mudah - mudahan bisa hadir</option>
-                  <option value="Belum Yakin">Belum Yakin</option>
-                  </select>
+              <div class="card__item">
+                <div class="item provider">BRI</div>
+                <div class="item value">1234-1234-1234-532</div>
+                <div class="item cabang">BCA cabang cengkareng</div>
+                <div class="item akun">a.n Fatimah Az Zahra</div>
               </div>
-            </label>
-            <label>
-              <span class="label">Ucapan</span>
-              <div class="">
-                <textarea class="input" rows="4"></textarea>
+            </div>
+            <div class="card__content">
+              <div class="card__content__title">Via Dompet Digital</div>
+              <div class="card__item">
+                <div class="item provider">OVO</div>
+                <img src="https://picsum.photos/300/300">
+                <div class="item akun">a.n Tony Hermawan</div>
               </div>
-            </label>
-            <button class="ucapan__btn">Kirim</button>
+              <div class="card__item">
+                <div class="item provider">LINK AJA</div>
+                <img src="https://picsum.photos/300/300">
+                <div class="item akun">a.n Tony Hermawan</div>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
-      <!-- Ucapan End -->
-        <span class="divider one padding"></span>
+        </section>
+        <!-- Angpao End -->
+   
+              
+        <span class="divider padding"></span>
+
+      <!-- RSVP -->
+        <section id="rsvp" class="section">
+          <div class="card">
+            <h2 class="card__title">Kirim Ucapan</h2>
+            <p class="card__subtitle">Kirim ucapan dan konfirmasi kehadiran anda ke mempelai.</p>
+            <div class="card__content">
+              <div class="card__item">
+                <div class="card__form">
+                  <label>
+                    <span class="label">Nama</span>
+                    <div class="">
+                      <input class="input error" type="text" />
+                    </div>
+                  </label>
+                  <label>
+                    <span class="label">Konfirmasi Kehadiran</span>
+                    <div class="">
+                      <select class="input">
+                        <option value="">Pilih</option>
+                        <option value="Hadir">Ya, Saya akan hadir</option>
+                        <option value="Tidak Bisa Hadir">Maaf, Saya tidak bisa hadir</option>
+                        <option value="Insha Allah Hadir">Insha Allah Saya akan hadir</option>
+                        <option value="Kemungkinan Hadir">Mudah - mudahan bisa hadir</option>
+                        <option value="Belum Yakin">Belum Yakin</option>
+                      </select>
+                    </div>
+                  </label>
+                  <label>
+                    <span class="label">Ucapan</span>
+                    <div class="">
+                      <textarea class="input" rows="4"></textarea>
+                    </div>
+                  </label>
+                  <button class="ucapan__btn">Kirim</button>
+                </div>
+              </div>
+            </div>
+            <div class="rsvp__comment">
+              <div class="rsvp__comment__header">
+                <h3 class="title">12 Ucapan</h3>
+                <div class="paginate">
+                  <div class="paginate__counter">
+                    <span class="paginate__total">2</span>
+                    <span class="paginate__total">of</span>
+                    <span class="paginate__total">6</span>
+                  </div>
+                  <span class="paginate__link prev">&larr;</span>
+                  <span class="paginate__link next">&rarr;</span>
+                </div>
+              </div>
+              <div class="rsvp__comment__content">
+                <div class="rsvp__comment__item">
+                  <div class="header">
+                    <p class="nama">Marsha and the bear</p>
+                    <p class="kehadiran">Tidak</p>
+                  </div>
+                  <p class="ucapan">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+                <div class="rsvp__comment__item">
+                  <div class="header">
+                    <p class="nama">Marsha and the bear</p>
+                    <p class="kehadiran disabled">Hadir</p>
+                  </div>
+                  <p class="ucapan">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+                <div class="rsvp__comment__item">
+                  <div class="header">
+                    <p class="nama">Marsha and the bear</p>
+                    <p class="kehadiran info">Hadir</p>
+                  </div>
+                  <p class="ucapan">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+                <div class="rsvp__comment__item">
+                  <div class="header">
+                    <p class="nama">Marsha and the bear</p>
+                    <p class="kehadiran success">Hadir</p>
+                  </div>
+                  <p class="ucapan">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+                <div class="rsvp__comment__item">
+                  <div class="header">
+                    <p class="nama">Marsha and the bear</p>
+                    <p class="kehadiran">Hadir</p>
+                  </div>
+                  <p class="ucapan">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      <!-- RSVP End -->
+        <span class="divider padding"></span>
 
         <!-- Kisah Start -->
         <section id="kisah" class="section">
-          <h2 class="section__title">Cerita Kami</h2>
-          <div class="section__content">
-            <ul class="section__content__timeline">
-              <li class="event" data-date="2003">
-                <h3>Lorem ipsum dolor sit.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab distinctio necessitatibus sint explicabo id soluta.</p>
-              </li>
-              <li class="event" data-date="2005">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ipsum totam impedit, magnam rem nam explicabo voluptatibus culpa alias dicta nostrum sed suscipit sint blanditiis ullam animi.</p>
-              </li>
-              <li class="event" id="date" data-date="2009">
-                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia aut quisquam illo laudantium, debitis esse obcaecati ab quis at dolore.</p>
-              </li>
-          
-              <li class="event" data-date="2021">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, nam?</p>
-              </li>
-            </ul>
+          <div class="card">
+            <h2 class="card__title">Cerita Kami</h2>
+            <p class="card__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab distinctio</p>
+            <div class="card__content">
+              <ul class="timeline">
+                <li class="card__item event" data-date="2003">
+                  <h3>Lorem ipsum dolor sit.</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab distinctio necessitatibus sint explicabo id soluta.</p>
+                </li>
+                <li class="card__item event " data-date="2005">
+                  <h3>Lorem ipsum dolor sit amet.</h3>
+                  <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ipsum totam impedit, magnam rem nam explicabo voluptatibus culpa alias dicta nostrum sed suscipit sint blanditiis ullam animi.</p>
+                </li>
+                <li class="card__item event" id="date" data-date="2009">
+                  <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia aut quisquam illo laudantium, debitis esse obcaecati ab quis at dolore.</p>
+                </li>
+            
+                <li class="card__item event" data-date="2021">
+                  <h3>Lorem, ipsum dolor.</h3>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, nam?</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
         <!-- Kisah End -->
-        <span class="divider one padding"></span>
+        <span class="divider padding"></span>
+
+        <section id="savedate" class="section">
+          <div class="card">
+            <div class="card__title">Save The Date</div>
+            <p class="card__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab distinctio</p>
+            <div class="card__content">
+              <div class="card__item">
+               <div class="countdown">
+                  <div data-js="countdown" class="countdown__container">
+                    <div class="countdown__block">
+                      <div class="countdown--item day">
+                        <div data-js="countdown-day" class="countdown--digit">23</div>
+                        <div class="countdown--label">Hari</div>
+                      </div>
+                    </div>
+                    <div class="countdown__block">
+                      <div class="countdown--item hour">
+                        <div data-js="countdown-hour" class="countdown--digit">10</div>
+                        <div class="countdown--label">Jam</div>
+                      </div>
+                      <div class="countdown--item minute">
+                        <div data-js="countdown-minute" class="countdown--digit">40</div>
+                        <div class="countdown--label">Menit</div>
+                      </div>
+                      <div class="countdown--item second">
+                        <div data-js="countdown-second" class="countdown--digit">12</div>
+                        <div class="countdown--label">detik</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-js="countdown-endtext" class="countdown--endtext">Acara sudah selesai</div>
+               </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <span class="divider padding"></span>
   
         <!-- Turut Mengundang Start -->
         <section id="mengundang" class="section">
-          <h2 class="section__title">Turut mengundang</h2>
-          <div class="section__content">
-            <div class="section__content__item">
-              <p class="section__content__item--nama">H Abdul Karim SH</p>
-              <p class="section__content__item--deskripsi">Lurah sidorejo</p>
-            </div>
-            <div class="section__content__item">
-              <p class="section__content__item--nama">Adi Mulyadi</p>
-              <p class="section__content__item--deskripsi">Ketua Rt sidorejo</p>
-            </div>
-            <div class="section__content__item">
-              <p class="section__content__item--nama">Abib Nuryanto</p>
-              <p class="section__content__item--deskripsi">Paman</p>
+          <div class="card">
+            <h2 class="card__title">Turut mengundang</h2>
+            <p class="card__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab distinctio</p>
+            <div class="card__content">
+              <div class="card__item">
+                <p class="item nama">H Abdul Karim SH</p>
+                <p class="item deskripsi">Lurah sidorejo</p>
+              </div>
+              <div class="card__item">
+                <p class="item nama">Adi Mulyadi</p>
+                <p class="item deskripsi">Ketua Rt sidorejo</p>
+              </div>
+              <div class="card__item">
+                <p class="item nama">Abib Nuryanto</p>
+                <p class="item deskripsi">Paman</p>
+              </div>
             </div>
           </div>
         </section>
         <!-- Turut Mengundang End -->
   
-        <span class="divider one padding"></span>
+        <!-- Prokes Start -->
+        <section id="prokes" class="">
+          <div class="card">
+            <div class="card__image">
+              <img src="./src/sample-data/img/prokes.jpg" />
+            </div>
+            <div class="card__content">
+              <h2 class="card__title">Protokol Kesehatan</h2>
+              <p class="card__subtitle">Mohon untuk mematuhi protokol kesehatan</p>
+              <div class="card__item">
+                <ol>
+                  <li>Cuci Tangan</li>
+                  <li>Memakai Masker</li>
+                  <li>Jaga Jarak</li>
+                </ol>
+              </div>
+            </div>
+            <div class="card__action">
+              <span class="card__close">Tutup</span>
+            </div>
+          </div>
+        </section>
+        <!-- Prokes End -->
 
+        <span class="divider padding"></span>
 
-        <!-- Music -->
-        <div id="music" class="play">
-          <button type="button" class="play__btn">
-          </button>
-          <audio id="audio__source" preload="none" loop>
-            <source src="./src/sample-data/music/file_example_MP3_700KB.mp3" type="audio/mpeg">
-          </audio>
+        <div id="credit">
+          <div class="footer">
+            <div class="footer__title">Thank You</div>
+            <div class="footer__content">
+              <p class="heading">Make with Love By <a href="/">Website Name</a></p>
+              <p class="subheading">Undangan Digital Online Terbaik</p>
+              <p>&copy; Copyright 2021 <a href="/">Website Name</a> Allrights Reserved</p>
+              <p>Backsound By <a href="/">Bensound</a></p>
+            </div>
+          </div>
         </div>
-
-        <div id="tab__menu" class="tab__menu">
-          <a href="#intro" data-target="#intro" class="tab tab__intro">
-            <svg xmlns="http://www.w3.org/2000/svg" class="tab__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-            </svg>
-            Home
-          </a>
-          <!-- <a href="#mempelai" class="tab tab__mempelai">
-            <svg xmlns="http://www.w3.org/2000/svg" class="tab__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-            </svg>
-            Mempelai
-          </a> -->
-          <a href="#acara" data-target="#acara" class="tab tab__acara">
-            <svg xmlns="http://www.w3.org/2000/svg" class="tab__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-            </svg>
-            Acara
-          </a>
-          <a href="#gallery" data-target="#gallery" class="tab tab__gallery">
-            <svg xmlns="http://www.w3.org/2000/svg" class="tab__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-            </svg>
-            Gallery
-          </a>
-          <a href="#angpao" data-target="#angpao" class="tab tab__angpao">
-            <svg xmlns="http://www.w3.org/2000/svg" class="tab__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
-            </svg>
-            Angpao
-          </a>
-          <a href="#maps" data-target="#maps" class="tab tab__map">
-            <svg xmlns="http://www.w3.org/2000/svg" class="tab__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-            </svg>
-            Map
-          </a>
-          <a href="#ucapan" data-target="#ucapan" class="tab tab__ucapan">
-            <svg xmlns="http://www.w3.org/2000/svg" class="tab__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
-            </svg>
-            Ucapan
-          </a>
-        </div>
-  
       </div>
       <!-- Panel Second End -->
     </div>
   </main>
-  <!-- Welcome Modal Start-->
-  <div id="welcome__modal" class="modal welcome">
-    <div class="welcome__overlay"></div>
-    <div class="welcome__inner">
-      <div class="welcome__inner__content">
-        <div class="welcome__inner__content--dear">
-          Dear Bapak Adrianto
-        </div>
-        <span class="divider one"></span>
-        <img class="welcome__inner__content--img" src="https://picsum.photos/id/1005/400/200">
-        <div class="welcome__inner__content--text">Tanpa mengurangi rasa hormat, kami memberikan kabar bahagia ini dan memohon
-          restu dari rekan sekalian untuk senantiasa
-          mendoakan kelancaran acara pernikahan kami.
-        </div>
-        <button id="welcome__btn" type="button" class="btn">Lihat Undangan</button>
-      </div>
-    </div>
+  <div id="tab__menu" class="tab__menu">
+    <a href="#intro" data-target="#intro" class="tab tab__intro">
+      <svg xmlns="http://www.w3.org/2000/svg" class="tab__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+      </svg>
+      Home
+    </a>
+    <a href="#mempelai"  data-target="#mempelai" class="tab tab__mempelai">
+      <svg xmlns="http://www.w3.org/2000/svg" class="tab__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+      </svg>
+      Mempelai
+    </a>
+    <a href="#acara" data-target="#acara" class="tab tab__acara">
+      <svg xmlns="http://www.w3.org/2000/svg" class="tab__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+      </svg>
+      Acara
+    </a>
+    <a href="#gallery" data-target="#gallery" class="tab tab__gallery">
+      <svg xmlns="http://www.w3.org/2000/svg" class="tab__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+      </svg>
+      Gallery
+    </a>
+    <a href="#maps" data-target="#maps" class="tab tab__map">
+      <svg xmlns="http://www.w3.org/2000/svg" class="tab__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+      </svg>
+      Map
+    </a>
+    <a href="#rsvp" data-target="#rsvp" class="tab tab__rsvp">
+      <svg xmlns="http://www.w3.org/2000/svg" class="tab__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+      </svg>
+      rsvp
+    </a>
   </div>
-  <!-- Welcome Modal End -->
+
+  <div id="music" class="play">
+    <button type="button" class="play__btn">
+    </button>
+    <audio id="audio__source" preload="none" loop>
+      <source src="./src/sample-data/music/file_example_MP3_700KB.mp3" type="audio/mpeg">
+    </audio>
+  </div>
   <script src="./src/js/main.js"></script>
   <script src="./script.js"></script>
+  <script src="./develop.js"></script>
 </body>
 </html>
-
-      <!-- Angpao Start -->
-      <!-- <section id="angpao" class="section">
-        <h2 class="section__title">Kirim Hadiah</h2>
-        <div class="section__content">
-          <div class="section__content_item">
-      
-          </div>
-        </div>
-      </section> -->
-      <!-- Angpao End -->

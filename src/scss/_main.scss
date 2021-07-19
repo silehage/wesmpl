@@ -1,8 +1,6 @@
-
-// Css simple reset
-// html {
-//   scroll-behavior: smooth;
-// }
+html {
+  scroll-behavior: smooth;
+}
 *, ::before, ::after {
   box-sizing: border-box;
   border-width: 0;
@@ -27,6 +25,7 @@ button:focus {
 }
 main {
   background-color: $backgroundColor;
+  overflow-x: hidden;
 }
 strong {
   font-weight: 600;
@@ -34,13 +33,15 @@ strong {
 h1,h2,h3,h4,h5,h6 {
   margin:0;
 }
-.section {
+.card {
   padding-top: 3rem;
   padding-bottom: 3rem;
   padding-left: 1rem;
   padding-right: 1rem;
   width:100%;
   overflow-x: hidden;
+  max-width: 700px;
+  margin:auto;
 
   &__content {
     padding:1rem;
@@ -51,8 +52,15 @@ h1,h2,h3,h4,h5,h6 {
     font-size: $h2;
     color: $mainColor;
     font-weight: $bold;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  &__subtitle {
+    font-size: $p2;
+    color:lighten($baseColor, 20);
+    max-width:370px;
+    margin:auto;
   }
  
 }
@@ -72,10 +80,9 @@ h1,h2,h3,h4,h5,h6 {
     &__first {
       position:relative;
       width:100%;
+      opacity: .5;
     }
     &__second {
-      width:0;
-      display:none;
     }
   }
   .hero__content {
@@ -83,7 +90,9 @@ h1,h2,h3,h4,h5,h6 {
     opacity: .4;
   }
 }
-
+.no-scroll {
+  overflow: hidden
+}
 
 .flex {
   display: flex;
@@ -94,12 +103,14 @@ h1,h2,h3,h4,h5,h6 {
   &__first {
     position:relative;
     width:100%;
+    overflow: hidden;
   }
   &__second {
     position: relative;
     width:100%;
     text-align: center;
     background-color: $backgroundColor;
+    overflow: hidden;
   }
 }
 
@@ -118,14 +129,33 @@ h1,h2,h3,h4,h5,h6 {
       bottom: 0;
       position: fixed;
       padding: 0;
-      width: $leftPanel;
+      width: $fisrtPanel;
       height: 100%;
     }
 
     &__second {
-      width: $rightPanel;
+      width: $secondPanel;
       margin-left: auto;
       text-align: center;
     }
   }
+}
+@media only screen and (max-width: 991px){
+  .panel {
+    &__first {
+      height: calc(100vh - 59px)
+    }
+    &__second {
+      padding-bottom: 3rem;
+    }
+
+  }
+  .is__modal {
+    .panel {
+      &__first {
+        height: 100vh;
+      }
+    }
+  }
+
 }

@@ -1,10 +1,3 @@
-/**
-** Divider
-**/
-// Sample1 <span class="divider one"></span>
-// can add padding class
-// Sample2 <span class="divider two padding"></span>
-
 .divider {
   display: block;
   width: 100%;
@@ -15,22 +8,18 @@
     margin-bottom: 2rem;
   }
 
-  &.one {
-
-    &::before {
-      content: '';
-      background-image: url('./asset/divider.png');
-      background-repeat: no-repeat;
-      background-position: center;
-      display: block;
-      width:100%;
-      height: 80px;
-      max-width: 230px;
-      background-size: contain;
-      margin: auto;
-      // background-color: darken($backgroundColor, 6);
-    }
-
+  &::before {
+    content: '';
+    background-image: url('./asset/divider.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width:100%;
+    height: 80px;
+    max-width: 230px;
+    background-size: contain;
+    margin: auto;
+    // background-color: darken($backgroundColor, 6);
   }
 
 /***

@@ -1,6 +1,3 @@
-/**
-** Hero
-**/
 .hero {
   position: relative;
   display: flex;
@@ -13,7 +10,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  &__ornament {
+  .ornament {
     width: 100%;
     height: 100%;
     position:absolute;
@@ -51,7 +48,7 @@
       }
     }
   }
-  &__content {
+  .content {
     z-index: 10;
     text-align: center;
     display: flex;

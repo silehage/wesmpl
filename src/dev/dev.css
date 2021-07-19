@@ -1,0 +1,21 @@
+.is__dev.no-scroll {
+  overflow-y: auto !important;
+}
+
+.is__dev #welcome {
+  position: relative;
+  height: auto;
+}
+
+.is__dev #welcome::before {
+  display: none;
+}
+
+.is__dev section#prokes {
+  position: relative;
+}
+
+.is__dev section#prokes::before {
+  display: none;
+}
+/*# sourceMappingURL=dev.css.map */
