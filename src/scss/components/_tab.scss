@@ -20,7 +20,7 @@ div#tab__menu {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color:$menuColor;
+    color:$secondary;
     text-decoration: none;
     &__icon {
       width:20px;
@@ -29,7 +29,7 @@ div#tab__menu {
     &:hover,
     &:focus,
     &:active {
-      color: darken($menuColor, 10)
+      color: darken($secondary, 10)
     }
   }
 }

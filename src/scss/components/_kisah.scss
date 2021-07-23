@@ -19,10 +19,10 @@ section#kisah {
   .card {
     &__content {
       .timeline {
-        border-left: $line solid lighten($menuColor, 10);
+        border-left: $line solid lighten($secondary, 10);
         border-bottom-right-radius: $radius;
         border-top-right-radius: $radius;    
-        color: $menuColor;
+        color: $secondary;
         margin: 0 auto;
         letter-spacing: 0.5px;   
         position: relative;
@@ -47,7 +47,7 @@ section#kisah {
         }
         
         .event {
-          border-bottom: 1px dashed lighten($menuColor, 10);
+          border-bottom: 1px dashed lighten($secondary, 10);
           padding-bottom: ($spacing * 0.5);
           margin-bottom: $spacing;  
           position: relative;
@@ -69,7 +69,7 @@ section#kisah {
           }
       
           &:after {
-            box-shadow: 0 0 0 $dotborder $menuColor;;    
+            box-shadow: 0 0 0 $dotborder $secondary;;    
             left: -55px;        
             background: $backgroundColor;    
             border-radius: 50%;  

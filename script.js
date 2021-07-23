@@ -147,19 +147,15 @@ function isPlaying() {
  */
 let has__popup = false;
 let prokesCard = null;
-let prokesCloseBtn = null;
-const prokesContainer = document.getElementById('prokes');
+let prokesContainer = null;
 
-function setProkes() {
-  console.log('prokes is set and fullscreen is', is__fulscreen);
+const setProkes = function() {
+  prokesContainer = document.getElementById('prokes');
   if(prokesContainer) {
     prokesContainer.style.zIndex = -1
-    let prokesCloseBtn = prokesContainer.querySelector('.card__close')
     prokesCard = prokesContainer.querySelector('.card')
-    prokesCloseBtn.innerHTML = '&times;'
-  
-    prokesCloseBtn.addEventListener('click', prokesAnimateOut)
-  
+    prokesContainer.querySelector('.card__close').addEventListener('click', prokesAnimateOut)
+    
     if(is__fulscreen) {
       prokesAnimObserve()
     }

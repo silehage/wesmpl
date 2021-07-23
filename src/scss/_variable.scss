@@ -2,30 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Great+Vibes&display=swap');
 
 // Base
-$backgroundColor: rgb(253, 245, 223); // Background color
+$backgroundColor: hsl(40, 86%, 92%); // Background color
+$baseColor: hsl(41, 61%, 39%); // Body text color
+$baseText: 16px; // Body font size
 
-$baseColor: rgb(71, 55, 21); // Base Color for body
-$baseFont:  'Montserrat', sans-serif; // Base font family
-$baseText: 16px; // Base text size
-
-// Main Font Family
-$mainFont: 'Great Vibes', cursive;
-
-$menuColor: rgb(185, 138, 17);
+$mainFont:  'Montserrat', sans-serif; // Main font family
+$secondaryFont: 'Great Vibes', cursive;
 
 // Color 
-$mainColor: rgb(202, 17, 125); // Main title color
-$secondaryColor: rgb(17, 128, 202);
-$tertiaryColor: rgb(3, 165, 111);
-$disabled: rgb(128, 128, 128);
-
-$success: rgb(3, 167, 11);
-$info: rgb(3, 128, 167);
-$error: rgb(190, 25, 3);
-
-$dark: #333;
-$light: rgb(224, 224, 224);
-$grey: rgb(141, 141, 141);
+$primary: hsl(325, 84%, 43%); 
+$secondary: hsl(41, 76%, 37%);
+$success: hsl(123, 96%, 33%);
+$info: hsl(194, 96%, 33%);
+$error: hsl(7, 97%, 38%);
+$disabled: hsl(0, 0%, 50%);
+$dark: hsl(0, 0%, 20%);
+$light: hsl(0, 0%, 90%);
+$grey: hsl(0, 0%, 50%);
 
 
 // Font Size

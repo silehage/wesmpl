@@ -4,8 +4,8 @@
     padding:1.6rem;
     &__title {
       font-size: 2.7rem;
-      font-family: $mainFont;
-      color: $mainColor;
+      font-family: $secondaryFont;
+      color: $primary;
     }
     &__content {
       font-size: $p4;
@@ -15,9 +15,9 @@
         font-size: $p;
 
         a {
-          color: $mainColor;
+          color: $primary;
           &:hover {
-            color:lighten($mainColor, 10)
+            color:lighten($primary, 10)
           }
         }
       }

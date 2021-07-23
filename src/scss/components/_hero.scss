@@ -62,9 +62,9 @@
     }
     &--heading { 
       text-align: center;
-      font-family: $mainFont;
+      font-family: $secondaryFont;
       font-size: $hero;
-      color: $mainColor
+      color: $primary;
     }
   }
 }

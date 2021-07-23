@@ -12,7 +12,7 @@ p {
 }
 body{
   background-color: $backgroundColor;
-  font-family: $baseFont;
+  font-family: $mainFont;
   color: $baseColor;
   font-size: $baseText;
   overflow-x: hidden;
@@ -48,9 +48,9 @@ h1,h2,h3,h4,h5,h6 {
   }
 
   &__title {
-    font-family: $mainFont;
+    font-family: $secondaryFont;
     font-size: $h2;
-    color: $mainColor;
+    color: $primary;
     font-weight: $bold;
     padding-top: .5rem;
     padding-bottom: .5rem;
@@ -58,7 +58,7 @@ h1,h2,h3,h4,h5,h6 {
 
   &__subtitle {
     font-size: $p2;
-    color:lighten($baseColor, 20);
+    color:lighten($baseColor, 5);
     max-width:370px;
     margin:auto;
   }

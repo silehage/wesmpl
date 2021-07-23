@@ -232,9 +232,9 @@ p {
 }
 
 body {
-  background-color: #fdf5df;
+  background-color: #fcf0d9;
   font-family: "Montserrat", sans-serif;
-  color: #473715;
+  color: #a07a27;
   font-size: 16px;
   overflow-x: hidden;
 }
@@ -248,7 +248,7 @@ button:focus {
 }
 
 main {
-  background-color: #fdf5df;
+  background-color: #fcf0d9;
   overflow-x: hidden;
 }
 
@@ -278,7 +278,7 @@ h1, h2, h3, h4, h5, h6 {
 .card__title {
   font-family: "Great Vibes", cursive;
   font-size: 2.7rem;
-  color: #ca117d;
+  color: #ca127d;
   font-weight: 600;
   padding-top: .5rem;
   padding-bottom: .5rem;
@@ -286,7 +286,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .card__subtitle {
   font-size: 0.87rem;
-  color: #96742c;
+  color: #b5892c;
   max-width: 370px;
   margin: auto;
 }
@@ -340,7 +340,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   width: 100%;
   text-align: center;
-  background-color: #fdf5df;
+  background-color: #fcf0d9;
   overflow: hidden;
 }
 
@@ -392,8 +392,19 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   opacity: 1;
   z-index: 500;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+#welcome .divider {
+  width: 100%;
+  height: 40px;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+#welcome .divider::before {
+  height: 40px;
 }
 
 #welcome .modal__content {
@@ -448,9 +459,9 @@ h1, h2, h3, h4, h5, h6 {
 #welcome .modal__item button {
   margin: 1.5rem auto .5rem;
   padding: .7rem 3rem;
-  background-color: #03a56f;
-  border: 1px solid #03be80;
-  color: #dcfef3;
+  background-color: #037fa5;
+  border: 1px solid #0493be;
+  color: #dcf6fe;
   font-weight: 600;
   border-radius: 5px;
   -webkit-transition: all .3s ease-in-out;
@@ -458,7 +469,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #welcome .modal__item button:hover, #welcome .modal__item button:focus {
-  background-color: #038c5e;
+  background-color: #036c8c;
   color: white;
 }
 
@@ -559,7 +570,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero .content--text {
-  color: #473715;
+  color: #a07a27;
   margin: 8px auto;
 }
 
@@ -567,7 +578,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   font-family: "Great Vibes", cursive;
   font-size: 5rem;
-  color: #ca117d;
+  color: #ca127d;
 }
 
 section#intro {
@@ -635,7 +646,7 @@ section#acara .card__item {
 section#acara .card__item .title {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #ca117d;
+  color: #ca127d;
 }
 
 section#acara .card__item .tanggal {
@@ -690,13 +701,12 @@ section#acara .card__item .tempat {
   font-size: 1.3rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  color: #ca117d;
+  color: #ca127d;
   font-weight: 600;
 }
 
 #mempelai .card__item .bio {
   font-size: smaller;
-  color: #8d8d8d;
   padding: .5rem;
 }
 
@@ -808,7 +818,7 @@ section#mengundang .card__item .nama {
 section#mengundang .card__item .deskripsi {
   margin-top: 0;
   font-size: 0.83rem;
-  color: #d09c0d;
+  color: #c78a0f;
 }
 
 section#angpao .card__title {
@@ -865,7 +875,7 @@ section#angpao .card__item img {
 
 section#maps .card__item .maps {
   border: 8px solid white;
-  background-color: #e0e0e0;
+  background-color: #e6e6e6;
 }
 
 section#maps .card__item .maps iframe {
@@ -879,7 +889,7 @@ section#maps .card__actions {
 
 section#maps .card__actions a {
   padding: 8px 26px;
-  background-color: #03a56f;
+  background-color: #037fa5;
   color: white;
   font-size: 0.83rem;
   margin-top: .7rem;
@@ -888,7 +898,7 @@ section#maps .card__actions a {
 }
 
 section#maps .card__actions a:focus, section#maps .card__actions a:active, section#maps .card__actions a:hover {
-  background-color: #038c5e;
+  background-color: #036c8c;
   color: #e6e6e6;
 }
 
@@ -935,7 +945,7 @@ section#rsvp .card__form {
           flex-direction: column;
   text-align: left;
   padding: 2rem;
-  background-color: #fceec7;
+  background-color: #fae7c1;
   border-radius: 8px;
   font-size: 0.83rem;
 }
@@ -955,7 +965,7 @@ section#rsvp .card__form .input {
   width: 100%;
   padding: 8px;
   outline: none;
-  border: 1px solid #fae6af;
+  border: 1px solid #f9deaa;
   border-radius: 6px;
   background-color: #fffbfb;
   color: #3b3522;
@@ -969,14 +979,14 @@ section#rsvp .card__form button {
   -ms-flex-item-align: end;
       align-self: flex-end;
   padding: 8px 16px;
-  background-color: #f4c84f;
+  background-color: #f1ba4b;
   border-radius: 5px;
   font-size: 0.87rem;
   color: white;
 }
 
 section#rsvp .card__form button:hover, section#rsvp .card__form button:focus {
-  background-color: #f3c137;
+  background-color: #f0b133;
   color: #f2f2f2;
 }
 
@@ -1001,7 +1011,7 @@ section#rsvp .rsvp__comment__header {
 }
 
 section#rsvp .rsvp__comment__header .title {
-  color: #96742c;
+  color: #d6ae57;
 }
 
 section#rsvp .rsvp__comment__header .paginate {
@@ -1018,7 +1028,7 @@ section#rsvp .rsvp__comment__header .paginate__counter {
 }
 
 section#rsvp .rsvp__comment__header .paginate__link {
-  background-color: #d09c0d;
+  background-color: #c78a0f;
   color: white;
   margin: 3px;
   text-align: center;
@@ -1036,7 +1046,7 @@ section#rsvp .rsvp__comment__content {
 }
 
 section#rsvp .rsvp__comment__item {
-  background-color: #fdf5df;
+  background-color: #fcf0d9;
   border-radius: 10px;
   margin-bottom: 1rem;
   margin-top: 1rem;
@@ -1057,7 +1067,7 @@ section#rsvp .rsvp__comment__item .header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #fae6af;
+  background-color: #f9deaa;
 }
 
 section#rsvp .rsvp__comment__item .nama {
@@ -1068,16 +1078,16 @@ section#rsvp .rsvp__comment__item .kehadiran {
   font-size: 0.83rem;
   padding: 2px 8px;
   border-radius: 20px;
-  background-color: #f1b91f;
+  background-color: #eea81b;
 }
 
 section#rsvp .rsvp__comment__item .kehadiran.success {
-  background-color: #03a70b;
+  background-color: #03a50b;
   color: white;
 }
 
 section#rsvp .rsvp__comment__item .kehadiran.info {
-  background-color: #0380a7;
+  background-color: #037fa5;
   color: white;
 }
 
@@ -1109,7 +1119,7 @@ section#rsvp .rsvp__comment__item .ucapan {
 }
 
 #music .play__btn {
-  background-color: #e8ad15;
+  background-color: #d3991d;
   width: var(--btn-height);
   height: var(--btn-height);
   border-radius: 50%;
@@ -1242,7 +1252,7 @@ div#tab__menu .tab {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #b98a11;
+  color: #a67917;
   text-decoration: none;
 }
 
@@ -1252,7 +1262,7 @@ div#tab__menu .tab__icon {
 }
 
 div#tab__menu .tab:hover, div#tab__menu .tab:focus, div#tab__menu .tab:active {
-  color: #8a670d;
+  color: #795811;
 }
 
 @media only screen and (min-width: 992px) {
@@ -1273,10 +1283,10 @@ section#kisah {
 }
 
 section#kisah .card__content .timeline {
-  border-left: 4px solid #e8ad15;
+  border-left: 4px solid #d3991d;
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
-  color: #b98a11;
+  color: #a67917;
   margin: 0 auto;
   letter-spacing: 0.5px;
   position: relative;
@@ -1290,7 +1300,7 @@ section#kisah .card__content .timeline {
 }
 
 section#kisah .card__content .timeline h2 {
-  font-family: "Great Vibes", cursive;
+  font-family: "Montserrat", sans-serif;
   font-weight: 100;
   font-size: 1.4em;
   margin-bottom: 1rem;
@@ -1302,7 +1312,7 @@ section#kisah .card__content .timeline h3, section#kisah .card__content .timelin
 }
 
 section#kisah .card__content .timeline .event {
-  border-bottom: 1px dashed #e8ad15;
+  border-bottom: 1px dashed #d3991d;
   padding-bottom: 25px;
   margin-bottom: 50px;
   position: relative;
@@ -1325,10 +1335,10 @@ section#kisah .card__content .timeline .event:before, section#kisah .card__conte
 }
 
 section#kisah .card__content .timeline .event:after {
-  -webkit-box-shadow: 0 0 0 4px #b98a11;
-          box-shadow: 0 0 0 4px #b98a11;
+  -webkit-box-shadow: 0 0 0 4px #a67917;
+          box-shadow: 0 0 0 4px #a67917;
   left: -55px;
-  background: #fdf5df;
+  background: #fcf0d9;
   border-radius: 50%;
   height: 11px;
   width: 11px;
@@ -1417,7 +1427,7 @@ section#prokes .card__image img {
 section#prokes .card__title {
   font-family: "Montserrat", sans-serif;
   font-size: 1.3rem;
-  color: #ca117d;
+  color: #ca127d;
 }
 
 section#prokes .card__subtitle {
@@ -1438,7 +1448,7 @@ section#prokes .card__item {
 section#prokes .card__item ul,
 section#prokes .card__item ol {
   padding-left: 1.5rem;
-  color: #473715;
+  color: #a07a27;
   font-weight: 400;
 }
 
@@ -1473,13 +1483,13 @@ section#prokes .card__item ol li {
 #credit .footer__title {
   font-size: 2.7rem;
   font-family: "Great Vibes", cursive;
-  color: #ca117d;
+  color: #ca127d;
 }
 
 #credit .footer__content {
   font-size: 0.78rem;
   padding: 1rem;
-  color: #826526;
+  color: #d1a442;
 }
 
 #credit .footer__content .heading {
@@ -1487,7 +1497,7 @@ section#prokes .card__item ol li {
 }
 
 #credit .footer__content .heading a {
-  color: #ca117d;
+  color: #ca127d;
 }
 
 #credit .footer__content .heading a:hover {
@@ -1499,15 +1509,11 @@ section#prokes .card__item ol li {
 }
 
 #credit .footer__content a {
-  color: #826526;
+  color: #d1a442;
 }
 
 #credit .footer__content a:hover {
-  color: #201909;
-}
-
-section#savedate .card .countdown {
-  color: #bd9238;
+  color: #775a1d;
 }
 
 section#savedate .card .countdown__container {
