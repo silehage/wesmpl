@@ -1,6 +1,7 @@
 section#maps {
   .card {
     &__item {
+      padding:1.5rem 0;
       .maps {
         border:8px solid white;
         background-color: $light;

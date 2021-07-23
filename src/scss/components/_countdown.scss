@@ -1,7 +1,7 @@
 section#savedate {
   .card {
+
     .countdown {
-      // color:lighten($baseColor, 5);
       &__container {
         padding:1rem;
         text-align: center;
@@ -9,7 +9,7 @@ section#savedate {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        color: lighten($secondary, 5);
+        color: $secondary;
       }
       &__block {
         display: flex;
@@ -17,24 +17,37 @@ section#savedate {
         font-size: $h5;
         font-weight: $bold;
 
-        .day{
+      } 
+      &__item {
+        padding: 3px 8px;
+        display:flex;
+        align-items: center;
+
+        &.day{
           font-size: $h1;
-          font-weight: $bold;
           display: flex;
           width: 100%;
+          font-weight: $bold;
+          color: $primary;
+
+          .label {
+            margin-left: .7rem;
+            font-size: $h1;
+          }
+          .digit {
+            font-size: $h1;
+          }
+        }
+        .digit {
+          font-size: $h4;
+        }
+        .label {
+          font-size: $p;
+          margin-left: .5rem;
         }
       }
-      &--digit {
-      }
-      &--label {
-        margin-left:5px;
-      }
-
-      &--item {
-        padding: 3px 8px;
-      }
-      &--endtext {
-        font-size: $p;
+      &__endtext {
+        font-size: $h5;
       }
     }
   }

@@ -277,7 +277,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .card__title {
   font-family: "Great Vibes", cursive;
-  font-size: 2.7rem;
+  font-size: 2.1rem;
   color: #ca127d;
   font-weight: 600;
   padding-top: .5rem;
@@ -287,6 +287,7 @@ h1, h2, h3, h4, h5, h6 {
 .card__subtitle {
   font-size: 0.87rem;
   color: #b5892c;
+  line-height: 1.6;
   max-width: 370px;
   margin: auto;
 }
@@ -582,7 +583,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 section#intro {
-  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -596,10 +596,6 @@ section#intro {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-section#intro .card__title {
-  font-size: 3.5rem;
 }
 
 section#intro .card__content {
@@ -616,7 +612,7 @@ section#intro .card__item {
 ** Section Acara
 **/
 section#acara .card__title {
-  font-size: 2.7rem;
+  font-size: 2.1rem;
 }
 
 section#acara .card__content {
@@ -630,22 +626,35 @@ section#acara .card__content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 section#acara .card__item {
-  background-color: white;
-  padding: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
   border-radius: 16px;
   width: 100%;
   max-width: 350px;
+  margin-bottom: 1rem;
+}
+
+section#acara .card__item .heading {
+  font-size: 2.1rem;
+  color: #ca127d;
+  font-weight: 600;
+  font-family: "Great Vibes", cursive;
+}
+
+section#acara .card__item .subheading {
+  font-size: 0.78rem;
+  color: rgba(128, 128, 128, 0.8);
+}
+
+section#acara .card__item .sparator {
+  color: rgba(128, 128, 128, 0.8);
 }
 
 section#acara .card__item .title {
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-size: 1.7rem;
+  font-family: "Great Vibes", cursive;
   color: #ca127d;
 }
 
@@ -661,10 +670,6 @@ section#acara .card__item .jam {
 section#acara .card__item .tempat {
   font-size: 0.87rem;
   padding: 0.87rem;
-}
-
-#mempelai .card__title {
-  font-size: 2.7rem;
 }
 
 #mempelai .card__item {
@@ -697,16 +702,20 @@ section#acara .card__item .tempat {
   height: auto;
 }
 
-#mempelai .card__item .name {
+#mempelai .card__item .heading {
   font-size: 1.3rem;
   margin-top: 1rem;
-  margin-bottom: 1rem;
   color: #ca127d;
   font-weight: 600;
 }
 
-#mempelai .card__item .bio {
-  font-size: smaller;
+#mempelai .card__item .subheading {
+  font-size: 0.87rem;
+  font-weight: 400;
+}
+
+#mempelai .card__item .text {
+  font-size: 0.83rem;
   padding: .5rem;
 }
 
@@ -732,10 +741,6 @@ section#acara .card__item .tempat {
   max-width: 230px;
   background-size: contain;
   margin: auto;
-}
-
-section#gallery .card__title {
-  font-size: 2.7rem;
 }
 
 section#gallery .card__subtitle {
@@ -777,10 +782,6 @@ section#gallery .card__item .img {
   border-radius: 12px;
 }
 
-section#mengundang .card__title {
-  font-size: 2.7rem;
-}
-
 section#mengundang .card__content {
   text-align: center;
 }
@@ -801,7 +802,6 @@ section#mengundang .card__item .deskripsi {
 }
 
 section#angpao .card__title {
-  font-size: 2.7rem;
   padding-bottom: .3rem;
 }
 
@@ -816,8 +816,8 @@ section#angpao .card__content {
 }
 
 section#angpao .card__content__title {
-  font-size: 1.3rem;
-  font-weight: 400;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 section#angpao .card__item {
@@ -850,6 +850,10 @@ section#angpao .card__item img {
   height: auto;
   margin-top: .5rem;
   margin-bottom: .5rem;
+}
+
+section#maps .card__item {
+  padding: 1.5rem 0;
 }
 
 section#maps .card__item .maps {
@@ -899,7 +903,7 @@ section#rsvp .card {
 }
 
 section#rsvp .card__title {
-  font-size: 2.7rem;
+  font-size: 2.1rem;
 }
 
 section#rsvp .card__subtitle {
@@ -1208,7 +1212,7 @@ div#tab__menu {
   z-index: 300;
   -webkit-box-shadow: 0px -1px 12px -8px #7b7b7b;
           box-shadow: 0px -1px 12px -8px #7b7b7b;
-  font-size: 12px;
+  font-size: 10px;
   height: 59px;
   opacity: 1;
   -webkit-transition: -webkit-transform .4s ease-in-out;
@@ -1260,8 +1264,8 @@ section#kisah {
   padding: 5px;
 }
 
-section#kisah .card__content .timeline {
-  border-left: 4px solid #d3991d;
+section#kisah .card .timeline {
+  border-left: 3px solid #d3991d;
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
   color: #a67917;
@@ -1277,44 +1281,44 @@ section#kisah .card__content .timeline {
   margin-left: 3rem;
 }
 
-section#kisah .card__content .timeline h2 {
+section#kisah .card .timeline h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
   font-size: 1.4em;
   margin-bottom: 1rem;
 }
 
-section#kisah .card__content .timeline h3, section#kisah .card__content .timeline h4 {
+section#kisah .card .timeline h3, section#kisah .card .timeline h4 {
   font-weight: 400;
   margin-bottom: .7rem;
 }
 
-section#kisah .card__content .timeline .event {
+section#kisah .card .timeline .event {
   border-bottom: 1px dashed #d3991d;
   padding-bottom: 25px;
   margin-bottom: 50px;
   position: relative;
 }
 
-section#kisah .card__content .timeline .event p {
+section#kisah .card .timeline .event p {
   font-size: 0.83rem;
 }
 
-section#kisah .card__content .timeline .event:last-of-type {
+section#kisah .card .timeline .event:last-of-type {
   padding-bottom: 0;
   margin-bottom: 0;
   border: none;
 }
 
-section#kisah .card__content .timeline .event:before, section#kisah .card__content .timeline .event:after {
+section#kisah .card .timeline .event:before, section#kisah .card .timeline .event:after {
   position: absolute;
   display: block;
   top: 0;
 }
 
-section#kisah .card__content .timeline .event:after {
-  -webkit-box-shadow: 0 0 0 4px #d3991d;
-          box-shadow: 0 0 0 4px #d3991d;
+section#kisah .card .timeline .event:after {
+  -webkit-box-shadow: 0 0 0 3px #d3991d;
+          box-shadow: 0 0 0 3px #d3991d;
   left: -55px;
   background: #fcf0d9;
   border-radius: 50%;
@@ -1451,7 +1455,7 @@ section#prokes .card__item ol li {
 }
 
 #credit {
-  background-color: wheat;
+  background-color: #fae7c1;
 }
 
 #credit .footer {
@@ -1467,7 +1471,7 @@ section#prokes .card__item ol li {
 #credit .footer__content {
   font-size: 0.78rem;
   padding: 1rem;
-  color: #d1a442;
+  color: #a07a27;
 }
 
 #credit .footer__content .heading {
@@ -1487,7 +1491,7 @@ section#prokes .card__item ol li {
 }
 
 #credit .footer__content a {
-  color: #d1a442;
+  color: #8c6a22;
 }
 
 #credit .footer__content a:hover {
@@ -1510,7 +1514,7 @@ section#savedate .card .countdown__container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: #bc891a;
+  color: #a67917;
 }
 
 section#savedate .card .countdown__block {
@@ -1522,24 +1526,45 @@ section#savedate .card .countdown__block {
   font-weight: 600;
 }
 
-section#savedate .card .countdown__block .day {
+section#savedate .card .countdown__item {
+  padding: 3px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#savedate .card .countdown__item.day {
   font-size: 3.5rem;
-  font-weight: 600;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  font-weight: 600;
+  color: #ca127d;
 }
 
-section#savedate .card .countdown--label {
-  margin-left: 5px;
+section#savedate .card .countdown__item.day .label {
+  margin-left: .7rem;
+  font-size: 3.5rem;
 }
 
-section#savedate .card .countdown--item {
-  padding: 3px 8px;
+section#savedate .card .countdown__item.day .digit {
+  font-size: 3.5rem;
 }
 
-section#savedate .card .countdown--endtext {
+section#savedate .card .countdown__item .digit {
+  font-size: 1.7rem;
+}
+
+section#savedate .card .countdown__item .label {
   font-size: 1rem;
+  margin-left: .5rem;
+}
+
+section#savedate .card .countdown__endtext {
+  font-size: 1.3rem;
 }
 /*# sourceMappingURL=style.css.map */

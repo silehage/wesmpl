@@ -7,29 +7,41 @@ section#acara {
   .card {
 
     &__title {
-      font-size: $h2;
+      font-size: $h3;
     }
 
     &__content {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding:1rem;
+      padding:2rem;
+
       
       
     }
     &__item {
-      background-color: white;
-      padding: 2rem;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
       border-radius: 16px;
       width:100%;
       max-width:350px;
+      margin-bottom: 1rem;
+
+      .heading {
+        font-size: $h3;
+        color: $primary;
+        font-weight: $bold;
+        font-family: $secondaryFont;
+      }
+      .subheading {
+        font-size: $p4;
+        color: rgba($grey, .8);
+      }
+      .sparator{
+         color: rgba($grey, .8);
+      }
       
       .title {
-        font-size: $h5;
-        font-weight: $bold;
+        font-size: $h4;
+        font-family: $secondaryFont;
         color: $primary;
       }
       .tanggal {

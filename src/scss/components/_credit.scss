@@ -1,5 +1,5 @@
 #credit {
-  background-color: wheat;
+  background-color: darken($backgroundColor, 5);
   .footer {
     padding:1.6rem;
     &__title {
@@ -10,7 +10,7 @@
     &__content {
       font-size: $p4;
       padding: 1rem;
-      color: lighten($baseColor, 15);
+      color: $baseColor;
       .heading {
         font-size: $p;
 
@@ -26,7 +26,7 @@
       }
 
       a {
-        color: lighten($baseColor, 15);
+        color: darken($baseColor, 5);
         &:hover {
           color:darken($baseColor, 10)
         }
