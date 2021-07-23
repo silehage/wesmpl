@@ -197,7 +197,7 @@ function prokesAnimateIn () {
     has__popup = true
 }
 function prokesAnimateOut () {
-   animate.out(prokesCard)
+   animate.out(prokesCard, animate.getRandomOut())
     setTimeout(() => {
       prokesContainer.style.opacity = 0
       prokesContainer.style.zIndex = -1
