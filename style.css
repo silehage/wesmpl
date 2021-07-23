@@ -633,7 +633,8 @@ section#acara .card__item {
   border-radius: 16px;
   width: 100%;
   max-width: 350px;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
+  margin-top: .5rem;
 }
 
 section#acara .card__item .heading {
@@ -1566,5 +1567,69 @@ section#savedate .card .countdown__item .label {
 
 section#savedate .card .countdown__endtext {
   font-size: 1.3rem;
+}
+
+section#quote .card {
+  padding: 0 2rem;
+}
+
+section#quote .card__content {
+  background-color: white;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+section#quote .card__content blockquote {
+  font-size: 0.87rem;
+  line-height: 1.6;
+}
+
+section#quote .card__content blockquote .quote {
+  font-size: 2.1rem;
+}
+
+section#quote .card__content blockquote::before {
+  content: open-quote;
+}
+
+section#quote .card__content blockquote::after {
+  content: close-quote;
+}
+
+section#quote .card__content footer {
+  margin-top: 1rem;
+  display: block;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+section#livestreaming .card__item {
+  padding: 1rem;
+  margin-bottom: .5rem;
+  margin-top: .5rem;
+}
+
+section#livestreaming .card__item .heading {
+  font-size: 1.1rem;
+  margin-bottom: .5rem;
+}
+
+section#livestreaming .card__item .thumbnail img {
+  width: auto;
+  max-width: 80%;
+  height: 60px;
+}
+
+section#livestreaming .card__item .link {
+  margin-top: 1rem;
+}
+
+section#livestreaming .card__item .link a {
+  padding: 6px 12px;
+  background-color: #037fa5;
+  color: white;
+  text-decoration: none;
+  font-size: 0.83rem;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=style.css.map */

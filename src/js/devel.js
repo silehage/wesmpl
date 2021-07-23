@@ -5,8 +5,8 @@
  * Boolean: true / false
  */
 
-const is__development = false
-// const is__development = true
+// const is__development = false
+const is__development = true
 
 if (is__development) {
   document.body.classList.remove('is__modal')

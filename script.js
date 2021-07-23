@@ -130,6 +130,7 @@ if(musicContainer) {
 
 
 function playMusic() {
+  if(!musicContainer) return 
   if (isPlaying()) {
     audioSrc.pause()
     playBtn.innerHTML = iconPause
@@ -147,10 +148,9 @@ function isPlaying() {
  */
 let has__popup = false;
 let prokesCard = null;
-let prokesContainer = null;
+let prokesContainer = document.getElementById('prokes');
 
 const setProkes = function() {
-  prokesContainer = document.getElementById('prokes');
   if(prokesContainer) {
     prokesContainer.style.zIndex = -1
     prokesCard = prokesContainer.querySelector('.card')
