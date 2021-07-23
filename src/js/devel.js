@@ -1,19 +1,19 @@
 
 
 /** 
- * Mode dev or production
+ * Development / Production mode
  * Boolean: true / false
  */
 
-const develop = false
+const is__development = false
 
-if (develop) {
+if (is__development) {
   document.body.classList.remove('is__modal')
   document.body.classList.add('is__dev')
 } 
 
 /**
- * Available animate:
+ * Available animate effect or see animateCss https://animate.style
  * 'backInDown','backInLeft', 'backInRight', 'backInUp','zoomIn', 
  * 'zoomInDown', 'zoomInLeft', 'zoomInRight', 'zoomInUp', 'jackInTheBox', 
  * 'rotateInDownRight', 'slideInRight', 'slideInUp', 'fadeInUp', 'bounceInUp',
