@@ -37,14 +37,14 @@
       &.left-bottom {
         //  background-image: url('./asset/hero_left-bottom.png');
         background-position: left bottom;
-        right:0;
+        left:0;
         bottom: 0;
       }
       &.right-bottom {
         background-image: url('./asset/hero_right-bottom.png');
         background-position: right bottom;
-        bottom:0;
         right:0;
+        bottom:0;
       }
     }
   }

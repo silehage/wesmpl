@@ -1,14 +1,7 @@
 
-/* Variables */
-$background: #252827;
-
-$color-primary: #004ffc;
-$color-light: white;
-$color-dim: #6c6d6d;
 $spacing: 50px;
 $radius: 4px;
 
-$date: 120px;
 $dotborder: 4px;
 $dot: 11px;
 $line: 4px;
@@ -69,7 +62,7 @@ section#kisah {
           }
       
           &:after {
-            box-shadow: 0 0 0 $dotborder $secondary;;    
+            box-shadow: 0 0 0 $dotborder lighten($secondary, 10);
             left: -55px;        
             background: $backgroundColor;    
             border-radius: 50%;  

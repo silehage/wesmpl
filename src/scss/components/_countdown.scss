@@ -9,6 +9,7 @@ section#savedate {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        color: lighten($secondary, 5);
       }
       &__block {
         display: flex;

@@ -540,15 +540,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero .ornament--item.left-bottom {
   background-position: left bottom;
-  right: 0;
+  left: 0;
   bottom: 0;
 }
 
 .hero .ornament--item.right-bottom {
   background-image: url("./asset/hero_right-bottom.png");
   background-position: right bottom;
-  bottom: 0;
   right: 0;
+  bottom: 0;
 }
 
 .hero .content {
@@ -714,27 +714,6 @@ section#acara .card__item .tempat {
   display: block;
   width: 100%;
   height: 80px;
-  /***
-
- &.two {
-
-    &::before {
-      content: '';
-      background-image: url('./asset/divider.png');
-      background-repeat: no-repeat;
-      background-position: center;
-      display: block;
-      width:100%;
-      height: 80px;
-      max-width: 230px;
-      background-size: contain;
-      margin: auto;
-      // background-color: darken($backgroundColor, 6);
-    }
-    
-  }
-
-  ***/
 }
 
 .divider.padding {
@@ -778,17 +757,8 @@ section#gallery .card__content > * {
           break-inside: avoid;
 }
 
-section#gallery .card__item .img {
-  width: 100%;
-  height: auto;
-  border: 6px solid white;
-  -webkit-box-shadow: 0px 20px 17px -20px #4d4d4d;
-          box-shadow: 0px 20px 17px -20px #4d4d4d;
-  border-radius: 12px;
-}
-
 @supports (grid-template-rows: masonry) {
-  section#gallery .card {
+  section#gallery .card__content {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (minmax(0, 1fr))[var];
@@ -796,6 +766,15 @@ section#gallery .card__item .img {
     -ms-grid-rows: masonry;
         grid-template-rows: masonry;
   }
+}
+
+section#gallery .card__item .img {
+  width: 100%;
+  height: auto;
+  border: 6px solid white;
+  -webkit-box-shadow: 0px 20px 17px -20px #4d4d4d;
+          box-shadow: 0px 20px 17px -20px #4d4d4d;
+  border-radius: 12px;
 }
 
 section#mengundang .card__title {
@@ -1277,7 +1256,6 @@ div#tab__menu .tab:hover, div#tab__menu .tab:focus, div#tab__menu .tab:active {
   opacity: 0;
 }
 
-/* Variables */
 section#kisah {
   padding: 5px;
 }
@@ -1335,8 +1313,8 @@ section#kisah .card__content .timeline .event:before, section#kisah .card__conte
 }
 
 section#kisah .card__content .timeline .event:after {
-  -webkit-box-shadow: 0 0 0 4px #a67917;
-          box-shadow: 0 0 0 4px #a67917;
+  -webkit-box-shadow: 0 0 0 4px #d3991d;
+          box-shadow: 0 0 0 4px #d3991d;
   left: -55px;
   background: #fcf0d9;
   border-radius: 50%;
@@ -1532,6 +1510,7 @@ section#savedate .card .countdown__container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  color: #bc891a;
 }
 
 section#savedate .card .countdown__block {
